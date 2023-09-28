@@ -13,3 +13,7 @@ export type AuthData = {
 }
 
 export type AuthResponse = Response<AuthData>
+
+export type AuthenticatedRequest = {
+  authHeader: string
+}

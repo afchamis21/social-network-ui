@@ -19,7 +19,7 @@ export default async function RootLayout({
       <body className="flex flex-col min-h-screen bg-gray-100">
         <ContextProvider>
           <Header />
-          <div className="flex-1 mx-auto container px-4 py-2 flex flex-col">
+          <div className="flex-1 mx-auto container px-4 py-8 flex flex-col">
             {children}
           </div>
           <Footer />
