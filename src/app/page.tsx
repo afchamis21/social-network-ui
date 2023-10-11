@@ -16,7 +16,7 @@ export default async function Home() {
     <main
       className={'flex flex-col md:flex-row md:justify-around gap-8 flex-1 '}
     >
-      <div>
+      <div className={'flex flex-col gap-8'}>
         <UserCard user={data.user} />
         <PossibleFriendsSection />
       </div>

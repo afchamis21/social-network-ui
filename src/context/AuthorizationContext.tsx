@@ -54,8 +54,7 @@ export function AuthorizationContextProvider({
       session.user.accessToken = tokenResponse.data.data.accessToken
       session.user.refreshToken = tokenResponse.data.data.refreshToken
 
-      console.log('New access token', session.user.accessToken)
-
+      console.log('Refreshed token')
       return session.user.accessToken
     } catch (e) {
       return null

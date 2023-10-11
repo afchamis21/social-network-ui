@@ -10,7 +10,14 @@ interface ContextProviderProps {
   children: ReactNode
 }
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      refetchInterval: 60 * 1000,
+    },
+  },
+})
 
 export function ContextProvider({ children }: ContextProviderProps) {
   return (

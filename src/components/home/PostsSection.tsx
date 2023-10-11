@@ -11,7 +11,7 @@ import { createPost } from '@/api/posts/createPost'
 import { signOut, useSession } from 'next-auth/react'
 import { SpinnerGap } from '@phosphor-icons/react'
 import { useAuthorizationContext } from '@/context/AuthorizationContext'
-import { Post } from '@/components/general/Post'
+import { Post } from '@/components/home/Post'
 
 export function PostsSection() {
   const [content, setContent] = useState('')

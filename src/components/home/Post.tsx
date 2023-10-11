@@ -1,3 +1,5 @@
+'use client'
+
 import { Post } from '@/types/posts'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
@@ -13,8 +15,9 @@ export function Post({ post }: PostProps) {
       locale: ptBR,
     })
   }
+
   return (
-    <div className={'bg-gray-50 shadow rounded-md p-2 flex flex-col gap-2'}>
+    <div className={'bg-white shadow rounded-md px-4 py-6 flex flex-col gap-2'}>
       <header className={'border-b border-rose-800'}>
         Autor: {post.owner.username}
       </header>
